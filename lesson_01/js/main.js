@@ -15,6 +15,7 @@ liItems[0].after(liItems[1]);
 liItems[3].after(liItems[0]);
 titles[4].after(titles[1]);
 titles[3].after(titles[4]);
+titles[2].replaceChildren('This и прототипы обЪектов');
 propList[2].before(titles[3]);
 listItemsFour[2].after(listItemsFour[5]);
 listItemsTwo[7].after(listItemsTwo[8]);
