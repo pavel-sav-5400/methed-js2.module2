@@ -5,11 +5,13 @@ const delLastElem = () => propsList.lastChild.remove();
 const clearList = () => propsList.textContent = '';
 
 propsList.style.cssText = `
-font-size: 20px;
+font-size: 25px;
 color: darkgreen;
+font-style: italic;
+font-weight: bold;
 `;
 
-const addValue = () => {
+const getUseStr = () => {
   const useStr = prompt('Введите строку').trim();
   propsList.insertAdjacentHTML('beforeend', `<li class="list__item">
 ${useStr}</li>`);
@@ -21,8 +23,8 @@ ${useStr}</li>`);
   }
   if (useStr === '') {
     delLastElem();
-    return addValue();
+    return getUseStr();
   }
-  return addValue();
+  return getUseStr();
 };
-addValue();
+getUseStr();
