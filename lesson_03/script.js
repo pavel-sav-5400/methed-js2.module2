@@ -5,10 +5,10 @@ const delLastElem = () => propsList.lastChild.remove();
 const clearList = () => propsList.textContent = '';
 
 propsList.style.cssText = `
-font-size: 25px;
-color: darkgreen;
-font-style: italic;
-font-weight: bold;
+  font-size: 25px;
+  color: darkgreen;
+  font-style: italic;
+  font-weight: bold;
 `;
 
 const getUseStr = () => {
